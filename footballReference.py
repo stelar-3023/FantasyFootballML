@@ -15,7 +15,7 @@ driver.get(url)
 print(driver.title)
 
 # Extract lists of players based on xpath
-players = driver.find_elements_by_xpath('//td[@data-stat="player"]')
+players = driver.find_elements_by_xpath('//td[@data-stat="player"]//a').click()
 
 # create empty array to store data
 data = []
